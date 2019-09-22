@@ -19,3 +19,42 @@ function accelerate_child_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'accelerate_child_scripts');
+
+function create_custom_post_types()
+{
+    register_post_type(
+      'case_studies',
+      array(
+      'labels' => array(
+      'name' => __('Case Studies'),
+      'singular_name' => __('Case Study')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'case-studies' ),
+    )
+  );
+}
+add_action('init', 'create_custom_post_types');
+
+
+// Allow for Tab to indent in WordPress HTML editor.
+/* Source = https://rudrastyh.com/wordpress/tab-to-indent.html */
+if (!function_exists('mr_tab_to_indent_in_textarea')) {
+    function mr_tab_to_indent_in_textarea()
+    {
+        $tabindent = '<script>
+		jQuery(function($) {
+			$("textarea#content, textarea#wp_mce_fullscreen").keydown(function(e){
+				if( e.keyCode != 9 ) return;
+				e.preventDefault();
+				var textarea = $(this)[0], start = textarea.selectionStart, before = textarea.value.substring(0, start), after = textarea.value.substring(start, textarea.value.length);
+				textarea.value = before + "\t" + after; textarea.setSelectionRange(start+1,start+1);
+			});
+		});</script>';
+        echo $tabindent;
+    }
+
+    add_action('admin_footer-post-new.php', 'mr_tab_to_indent_in_textarea');
+    add_action('admin_footer-post.php', 'mr_tab_to_indent_in_textarea');
+}
