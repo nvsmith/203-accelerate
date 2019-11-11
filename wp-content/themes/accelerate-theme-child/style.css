@@ -45,6 +45,26 @@ Text Domain:  accelerate-theme-child
   text-transform: uppercase;
 }
 
+.featured-work h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featured-work h3 {
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+
+.homepage-featured-work {
+  list-style: none;
+  width: 300px;
+  float: left;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+
+
 /*  Case Studies */
 .case-study {
   float: left;
@@ -55,3 +75,5 @@ Text Domain:  accelerate-theme-child
   float: right;
   width: 600px;
 }
+
+/* End Case Studies */

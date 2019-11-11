@@ -32,7 +32,7 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 						<p class="read-more-link">
-							<a href="<?php echo $site_link; ?>">Visit Live Site ›</a>
+							<a href="<?php echo $site_link; ?>">Visit Live Site &rsaquo;</a>
 						</p>
 					</aside>
 				</article>
