@@ -36,7 +36,9 @@ get_header(); ?>
 			<ul class="homepage-featured-work">
 				<li class="featured-work-image">
 					<figure>
-						<?php echo wp_get_attachment_image($image_1, $size) ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php echo wp_get_attachment_image($image_1, $size) ?>
+						</a>						
 					</figure>
 				</li>
 
