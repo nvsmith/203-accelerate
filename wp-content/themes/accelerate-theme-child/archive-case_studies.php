@@ -32,9 +32,12 @@
  				</article>
 
  				<div class="case-study-images">
- 					<?php if($image_1) {
- 						echo wp_get_attachment_image( $image_1, $size );
- 					}?>
+					<a href="<?php the_permalink(); ?>">
+						<?php if($image_1) {
+							echo wp_get_attachment_image( $image_1, $size );
+						} ?>
+					</a>
+
  				</div><!-- end case-study-images -->
  			<?php endwhile; // end of the loop.?>
  		</div><!-- .main-content -->
