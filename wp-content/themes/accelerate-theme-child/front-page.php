@@ -38,7 +38,7 @@ get_header(); ?>
 					<figure>
 						<a href="<?php the_permalink(); ?>">
 							<?php echo wp_get_attachment_image($image_1, $size) ?>
-						</a>						
+						</a>
 					</figure>
 				</li>
 
@@ -47,7 +47,7 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
 				</li>
-			</ul><!-- end homepage-featured-work -->
+			</ul><!-- end .homepage-featured-work -->
 				<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
 		</div><!-- end site-content -->
