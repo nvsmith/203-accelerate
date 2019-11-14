@@ -74,4 +74,9 @@ Text Domain:  accelerate-theme-child
   width: 600px;
 }
 
+.case-study-images img {
+  width: 100%;
+  height: auto;
+}
+
 /* End Case Studies */
