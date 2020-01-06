@@ -83,15 +83,6 @@ Text Domain:  accelerate-theme-child
 }
 
 /* Contact Us Page */
-#contact-header, .ninjaforms-wrapper {
-  border: 2px solid red;
-  width: 70%;
-  margin: auto;
-}
-.nf-form-fields-required {
-  color: #383838;
-}
-
 
 /*  Case Studies */
 .case-study {
