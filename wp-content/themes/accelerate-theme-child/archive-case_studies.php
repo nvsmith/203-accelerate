@@ -14,10 +14,10 @@
  	<div id="primary" class="site-content sidebar">
  		<div class="main-content" role="main">
  			<?php while (have_posts()) : the_post();
- 	      $services = get_field('services');
- 	      $site_link = get_field('site_link');
- 	      $image_1 = get_field('image_1');
- 				$size = "full";
+          $services = get_field('services');
+          $site_link = get_field('site_link');
+          $image_1 = get_field('image_1');
+                $size = "full";
        ?>
 
  				<article class="case-study">
@@ -29,16 +29,16 @@
  							<a href="<?php the_permalink(); ?>">View Project &rsaquo;</a>
  						</p>
  					</aside>
- 				</article>
+
 
  				<div class="case-study-images">
 					<a href="<?php the_permalink(); ?>">
-						<?php if($image_1) {
-							echo wp_get_attachment_image( $image_1, $size );
-						} ?>
+						<?php if ($image_1) {
+           echo wp_get_attachment_image($image_1, $size);
+       } ?>
 					</a>
-
  				</div><!-- end case-study-images -->
+        </article>
  			<?php endwhile; // end of the loop.?>
  		</div><!-- .main-content -->
  	</div><!-- #primary -->

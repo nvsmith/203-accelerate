@@ -20,7 +20,26 @@
 				</div>
 
 				<nav class="social-media-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+					<?php wp_nav_menu(array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' )); ?>
+
+					<div class="social-wrapper">
+						<div class="social-icons">
+							<a href="https://twitter.com/nathanielvs9" target="_blank">
+								<i class="fab fa-twitter"></i>
+								<span class="screen-reader-text">Twitter</span>
+							</a>
+
+							<a href="http://facebook.com" target="_blank">
+							<i class="fab fa-facebook"></i>
+								<span class="screen-reader-text">Facebook</span>
+							</a>
+
+							<a href="http://linkedin.com" target="_blank">
+								<i class="fab fa-linkedin"></i>
+								<span class="screen-reader-text">LinkedIn</span>
+							</a>
+						</div><!-- end social-icons -->
+					</div><!-- end social-wrapper -->
 				</nav>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->

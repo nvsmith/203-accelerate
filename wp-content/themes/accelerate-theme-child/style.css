@@ -22,16 +22,20 @@ Text Domain:  accelerate-theme-child
 }
 
 .blog-post {
-  width: 50%;
-  float: left;
+  display: inline-block;
   margin-bottom: 2em;
 }
 
+.blog-post h4, .blog-post h3, .blog-post p {
+  margin-left: 0;
+  width: 50%;
+}
+
 .blog-post h4 {
-  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
-  text-transform: uppercase;
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   margin: 2em 0 .5em;
+  text-transform: uppercase;
 }
 
 .blog-post h3 {
@@ -39,15 +43,15 @@ Text Domain:  accelerate-theme-child
 }
 
 .read-more-link {
+  color: #45ac9d;
   font-family: 'Montserrat';
   font-weight: 700;
-  color: #45ac9d;
   text-transform: uppercase;
 }
 
 .featured-work h4 {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .featured-work h3 {
@@ -56,27 +60,67 @@ Text Domain:  accelerate-theme-child
 }
 
 .homepage-featured-work {
-  list-style: none;
-  width: 300px;
   float: left;
-  text-align: center;
+  list-style: none;
   margin-bottom: 3em;
+  text-align: center;
+  width: 30%;
+}
+
+/* Social Media Nav */
+.social-media-navigation li {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons .fab {
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  text-align: center;
+  width: 100%;
 }
 
 /*  Case Studies */
 .case-study {
-  float: left;
-  width: 300px;
+  display: flex;
+  width: 900px;
+}
+
+.case-study-sidebar {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+
+.case-study h2 {
+  margin-top: 1em;
 }
 
 .case-study-images {
-  float: right;
-  width: 600px;
+  padding: 0 0 3em 3em;
+  width: 70%;
 }
 
 .case-study-images img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 /* End Case Studies */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip-path: inset(50%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
