@@ -74,15 +74,24 @@ Text Domain:  accelerate-theme-child
 
 .social-icons {
   display: flex;
-  flex-direction: column;
 }
 
 .social-icons .fab {
-  font-size: 1.5em;
-  padding-bottom: .5em;
-  text-align: center;
-  width: 100%;
+  color: #000;
+  font-size: 2em;
+  padding: 0 .25em;
 }
+
+/* Contact Us Page */
+#contact-header, .ninjaforms-wrapper {
+  border: 2px solid red;
+  width: 70%;
+  margin: auto;
+}
+.nf-form-fields-required {
+  color: #383838;
+}
+
 
 /*  Case Studies */
 .case-study {
