@@ -83,6 +83,40 @@ Text Domain:  accelerate-theme-child
 }
 
 /* Contact Us Page */
+#contact-header {
+  width: 75%;
+  margin: auto;
+}
+
+.nf-form-fields-required {
+  padding-bottom: 3em;
+  color: #5A5A5A;
+  width: 75%;
+  margin: auto;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.nf-form-content {
+  width: 75%;
+  margin: auto;
+}
+
+
+.nf-field-label {
+  color: #5A5A5A;
+  font-size: .85em;
+}
+
+#nf-field-4 {
+  width: 12em;
+  float: right;
+  color: #fff;
+  background-color: #43ab9d;
+  padding: 1em 0;
+}
 
 /*  Case Studies */
 .case-study {
