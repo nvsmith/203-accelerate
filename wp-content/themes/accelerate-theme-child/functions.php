@@ -20,21 +20,36 @@ function accelerate_child_scripts()
 
 add_action('wp_enqueue_scripts', 'accelerate_child_scripts');
 
-function create_custom_post_types()
-{
-    register_post_type(
-      'case_studies',
-      array(
+function create_custom_post_types(){
+  // Custom post type for case studies
+  register_post_type(
+    'case_studies', array(
       'labels' => array(
-      'name' => __('Case Studies'),
-      'singular_name' => __('Case Study')
+        'name' => __('Case Studies'),
+        'singular_name' => __('Case Study')
       ),
       'public' => true,
       'has_archive' => true,
       'rewrite' => array( 'slug' => 'case-studies' ),
     )
-  );
-}
+  ); // End register_post_type case studies
+
+  // Custom post type for service offers
+  register_post_type(
+    'service_offers', array(
+      'labels' => array(
+        'name' => __('Service Offers'),
+        'singular_name' => __('Service Offer')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'service-offers' ),
+    )
+  ); // End register_post_type service offers
+
+} // End function create_custom_post_types
+
+// Hook the custom post type function into the theme
 add_action('init', 'create_custom_post_types');
 
 
