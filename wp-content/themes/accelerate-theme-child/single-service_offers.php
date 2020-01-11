@@ -17,7 +17,7 @@
  			<?php while (have_posts()) : the_post();
  	      $service_offer = get_field('service_offer');
  	      $back_link = get_field('back_link');
- 	      $service_image = get_field('service_image');
+ 	      $image_1 = get_field('image_1');
  	      $size = "full";
        ?>
 
@@ -32,8 +32,8 @@
  				</article>
 
  				<div class="case-study-images">
- 					<?php if($service_image) {
- 						echo wp_get_attachment_image( $service_image, $size );
+ 					<?php if($image_1) {
+ 						echo wp_get_attachment_image( $image_1, $size );
  					}?>
  				</div><!-- end case-study-images -->
  			<?php endwhile; // end of the loop.?>
