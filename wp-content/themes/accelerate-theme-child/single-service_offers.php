@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying service offers
+ * The template for displaying a single service offer
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
  * different template.
@@ -10,15 +10,34 @@
  * @since Accelerate Marketing 2.0
  */
 
-get_header(); ?>
+ get_header(); ?>
 
-	<div id="primary" class="home-page hero-content">
-		<div class="main-content" role="main">
-			<?php while (have_posts()) : the_post(); ?>
-				<h1>This is my service offers page</h1>
-				<?php the_content(); ?>
-			<?php endwhile; // end of the loop.?>
-		</div><!-- .main-content -->
-	</div><!-- #primary -->
+ 	<div id="primary" class="site-content sidebar">
+ 		<div class="main-content" role="main">
+ 			<?php while (have_posts()) : the_post();
+ 	      $service_offer = get_field('service_offer');
+ 	      $back_link = get_field('back_link');
+ 	      $service_image = get_field('service_image');
+ 	      $size = "full";
+       ?>
 
-<?php get_footer(); ?>
+ 				<article class="case-study">
+ 					<aside class="case-study-sidebar">
+ 						<h2><?php the_title(); ?></h2>
+ 						<?php the_content(); ?>
+ 						<p class="read-more-link">
+ 							<a href="<?php echo $back_link; ?>">&lsaquo; Go Back</a>
+ 						</p>
+ 					</aside>
+ 				</article>
+
+ 				<div class="case-study-images">
+ 					<?php if($service_image) {
+ 						echo wp_get_attachment_image( $service_image, $size );
+ 					}?>
+ 				</div><!-- end case-study-images -->
+ 			<?php endwhile; // end of the loop.?>
+ 		</div><!-- .main-content -->
+ 	</div><!-- #primary -->
+
+ <?php get_footer(); ?>
