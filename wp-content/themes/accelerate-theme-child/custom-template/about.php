@@ -19,6 +19,17 @@
  <div id="primary" class="home-page hero-content">
  	<div class="main-content" role="main">
 
+		<?php query_posts('post_type=service_offers'); ?>
+
+		<?php while (have_posts()) : the_post();
+			$banner_tagline = get_field('banner_tagline');
+		?>
+
+		<h3><?php echo $banner_tagline; ?></h3>
+
+		<?php endwhile; ?>
+
+		<?php wp_reset_query(); ?>
  	</div><!-- .main-content -->
  </div><!-- #primary -->
 
@@ -43,15 +54,15 @@
 				 </aside> <!-- end .service-offers-sidebar -->
 			 </section> <!-- end .service-content -->
 
-			 <ul class="about-page-images">
-				 <li class="service-images">
+			 <div class="about-page-images">
+				 <div class="service-images">
 					 <figure>
 						 <a href="<?php the_permalink(); ?>">
 							 <?php echo wp_get_attachment_image($image_1, $size) ?>
 						 </a>
 					 </figure>
-				 </li>
-			 </ul><!-- end .about-page-images -->
+				 </div>
+			 </div><!-- end .about-page-images -->
 		 <?php endwhile; ?>
 
 		 <?php wp_reset_query(); ?>

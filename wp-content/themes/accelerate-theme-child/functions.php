@@ -43,7 +43,7 @@ function create_custom_post_types(){
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array( 'slug' => 'service-offers' ),
+      'rewrite' => array( 'slug' => 'about' ),
     )
   ); // End register_post_type service offers
 
