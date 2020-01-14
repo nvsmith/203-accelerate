@@ -19,13 +19,13 @@
  <div id="primary" class="home-page hero-content">
  	<div class="main-content" role="main">
 
-		<?php query_posts('post_type=service_offers'); ?>
+		<?php query_posts('post_type=service_offers&p=47436'); ?>
 
 		<?php while (have_posts()) : the_post();
-			$banner_tagline = get_field('banner_tagline');
+			$hero_banner = get_field('hero_banner');
 		?>
 
-		<h3><?php echo $banner_tagline; ?></h3>
+		<h3 class="banner-content"><?php echo $hero_banner; ?></h3>
 
 		<?php endwhile; ?>
 
@@ -37,12 +37,12 @@
 	 <div class="site-content">
 		 <div class="service-offers">
 
-		 <?php query_posts('post_type=service_offers'); ?>
+			 <?php query_posts('post_type=service_offers'); ?>
 
-		 <?php while (have_posts()) : the_post();
-       $image_1 = get_field('image_1');
-       $size = "full";
-      ?>
+			 <?php while (have_posts()) : the_post();
+	       $image_1 = get_field('image_1');
+	       $size = "full";
+	      ?>
 
 			 <section class="service-content">
 				 <aside class="service-offers-sidebar">
@@ -61,12 +61,11 @@
 							 <?php echo wp_get_attachment_image($image_1, $size) ?>
 						 </a>
 					 </figure>
-				 </div>
-			 </div><!-- end .about-page-images -->
-		 <?php endwhile; ?>
+				 </div> <!-- end .service-images -->
+			 </div> <!-- end .about-page-images -->
 
-		 <?php wp_reset_query(); ?>
-
+			 <?php endwhile; ?>
+			 <?php wp_reset_query(); ?>
 		 </div> <!-- end .service-offers -->
 	 </div> <!-- end .site content -->
  </section> <!-- end .about-page -->

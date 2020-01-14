@@ -43,9 +43,22 @@ function create_custom_post_types(){
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array( 'slug' => 'about' ),
+      'rewrite' => array( 'slug' => 'services' ),
     )
   ); // End register_post_type service offers
+
+  // Custom post type for banners
+  register_post_type(
+    'banners', array(
+      'labels' => array(
+        'name' => __('Banners'),
+        'singular_name' => __('Banner')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'banners' ),
+    )
+  ); // End register_post_type banners
 
 } // End function create_custom_post_types
 
