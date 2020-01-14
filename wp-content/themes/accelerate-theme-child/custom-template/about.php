@@ -19,7 +19,7 @@
  <div id="primary" class="home-page hero-content">
  	<div class="main-content" role="main">
 
-		<?php query_posts('post_type=service_offers&p=47436'); ?>
+		<?php query_posts('post_type=banners&p=47441'); ?>
 
 		<?php while (have_posts()) : the_post();
 			$hero_banner = get_field('hero_banner');
