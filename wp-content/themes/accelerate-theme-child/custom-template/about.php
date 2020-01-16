@@ -82,4 +82,26 @@
 	 </div> <!-- end .site content -->
  </section> <!-- end .about-page -->
 
+ <section class="about-page">
+	 <div class="tagline-wrapper">
+		 <div class="contact-content">
+			 <?php query_posts('post_type=banners'); ?>
+ 				<?php while (have_posts()) : the_post();
+ 					$contact_tagline= get_field('contact_tagline');
+					$button_text = get_field('button_text');
+					$button_link = get_field('button_link');
+ 				?>
+					<h3 class="contact-header"><?php echo $contact_tagline; ?></h4>
+
+					<a class="button" href="<?php echo $button_link; ?>"><?php echo $button_text; ?></a>
+
+				<div>
+					<?php echo $contact_button; ?>
+				</div>
+
+ 				<?php endwhile; ?>
+ 			<?php wp_reset_query(); ?>
+		</div><!-- end .tagline-content -->
+	 </div> <!-- end .tagline-wrapper -->
+
  <?php get_footer(); ?>
