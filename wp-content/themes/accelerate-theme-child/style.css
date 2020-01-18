@@ -82,6 +82,18 @@ Text Domain:  accelerate-theme-child
   padding: 0 .25em;
 }
 
+
+/* About Page */
+.hero-content .banner-content, .tagline-content {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+
+
+
+
 /* Contact Us Page */
 #contact-header {
   width: 75%;

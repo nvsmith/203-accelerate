@@ -93,7 +93,7 @@
  				?>
 					<h3 class="contact-header"><?php echo $contact_tagline; ?></h4>
 
-					<a class="button" href="<?php echo $button_link; ?>"><?php echo $button_text; ?></a>
+					<a class="button" href="<?php echo $button_link; ?>" target="_blank"><?php echo $button_text; ?></a>
 
 				<div>
 					<?php echo $contact_button; ?>
