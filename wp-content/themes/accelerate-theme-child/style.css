@@ -84,13 +84,43 @@ Text Domain:  accelerate-theme-child
 
 
 /* About Page */
+.about-page {
+  width: 75%;
+  margin: auto;
+}
+
 .hero-content .banner-content, .tagline-content {
   margin: auto;
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
 
+.tagline-content {
+  margin-bottom: 5em;
+}
 
+.service-content {
+width: 55%;
+float: left;
+padding-bottom: 10%;
+margin-bottom: 2em;
+}
+
+.service-images {
+  width: 40%;
+  float: right
+}
+
+.contact-content {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.contact-header {
+  margin-bottom: 2em;
+}
 
 
 
@@ -169,4 +199,15 @@ Text Domain:  accelerate-theme-child
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+/* 404 Error Page */
+.error404 {
+  color: white;
+  font-family: 'Londrina Solid', cursive;
+}
+
+#goback-button {
+  display: inline-block;
+  margin-top: 1em;
 }
