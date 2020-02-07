@@ -69,7 +69,8 @@ add_action('init', 'create_custom_post_types');
 // Create a new dymanic sidebar
 function accelerate_theme_child_widget_init() {
 
-	register_sidebar( array(
+	register_sidebar(
+    array(
 	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
 	    'id' => 'sidebar-2',
 	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
@@ -77,9 +78,9 @@ function accelerate_theme_child_widget_init() {
 	    'after_widget' => '</aside>',
 	    'before_title' => '<h3 class="widget-title">',
 	    'after_title' => '</h3>',
-	) );
-
-}
+    ) 
+  );
+} // End function accelerate_theme_child_widget_init
 
 // Hook the accelerate_theme_child_widget_init function into the theme
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );

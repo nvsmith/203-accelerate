@@ -24,11 +24,11 @@ Text Domain:  accelerate-theme-child
 .blog-post {
   display: inline-block;
   margin-bottom: 2em;
+  padding-right: 2em;
 }
 
 .blog-post h4, .blog-post h3, .blog-post p {
   margin-left: 0;
-  width: 50%;
 }
 
 .blog-post h4 {
@@ -40,6 +40,16 @@ Text Domain:  accelerate-theme-child
 
 .blog-post h3 {
   font-size: 1.5em;
+}
+
+.blog-post, .twitter-feed {
+  width: 50%;
+  float: left;
+}
+
+.twitter-feed {
+  padding-left: 2em;
+  margin-bottom: 2em;
 }
 
 .read-more-link {
