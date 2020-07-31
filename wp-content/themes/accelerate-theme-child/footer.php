@@ -24,7 +24,7 @@
 
 					<div class="social-wrapper">
 						<div class="social-icons">
-							<a href="https://twitter.com/nathanielvs9" target="_blank">
+							<a href="http://twitter.com/" target="_blank">
 								<i class="fab fa-twitter"></i>
 								<span class="screen-reader-text">Twitter</span>
 							</a>
