@@ -14,13 +14,23 @@ Text Domain:  accelerate-theme-child
 }
 
 #masthead {
-  background: none repeat scroll 0 0 #44ab9d;
+  /* background: none repeat scroll 0 0 #8F7686; */
+  background-color: #8F7686;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
 }
 
 .button {
-  background: #44ab9d;
+  background: #8F7686;
 }
 
+#navigation .left a,
+#navigation .right a {
+  color: #8F7686;
+}
+
+/* Blog Styles */
 .blog-post {
   display: inline-block;
   margin-bottom: 2em;
@@ -47,13 +57,29 @@ Text Domain:  accelerate-theme-child
   float: left;
 }
 
+.entry-title a:hover, .entry-time, .category .page-title span, .entry-summary a {
+  color: #8F7686;
+}
+
+.entry-footer .entry-terms a:hover {
+  border-bottom: 1px solid #8F7686;
+}
+
+.comment-list .comment a, .comments-area .comment-reply-title, .comments-area .comment-reply-title a {
+  color: #8F7686;
+}
+
+.comments-area .comment-form input[type="submit"] {
+  background: #8F7686;
+}
+
 .twitter-feed {
   padding-left: 2em;
   margin-bottom: 2em;
 }
 
 .read-more-link {
-  color: #45ac9d;
+  color: #8F7686;
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
@@ -87,11 +113,10 @@ Text Domain:  accelerate-theme-child
 }
 
 .social-icons .fab {
-  color: #000;
+  color: #8F7686;
   font-size: 2em;
   padding: 0 .25em;
 }
-
 
 /* About Page */
 .about-page {
@@ -110,10 +135,10 @@ Text Domain:  accelerate-theme-child
 }
 
 .service-content {
-width: 55%;
-float: left;
-padding-bottom: 10%;
-margin-bottom: 2em;
+  width: 55%;
+  float: left;
+  padding-bottom: 10%;
+  margin-bottom: 2em;
 }
 
 .service-images {
@@ -131,8 +156,6 @@ margin-bottom: 2em;
 .contact-header {
   margin-bottom: 2em;
 }
-
-
 
 /* Contact Us Page */
 #contact-header {
@@ -156,7 +179,6 @@ margin-bottom: 2em;
   margin: auto;
 }
 
-
 .nf-field-label {
   color: #5A5A5A;
   font-size: .85em;
@@ -166,7 +188,7 @@ margin-bottom: 2em;
   width: 12em;
   float: right;
   color: #fff;
-  background-color: #43ab9d;
+  background-color: #8F7686;
   padding: 1em 0;
 }
 
@@ -196,8 +218,15 @@ margin-bottom: 2em;
   width: 100%;
 }
 
-/* End Case Studies */
+#sidebar .widget_search input[type="submit"] {
+  background: url('img/white-arrow-right.png') no-repeat center #8F7686;
+}
 
+#sidebar h2 {
+  color: #8F7686;
+}
+
+/* End Case Studies */
 /* Blog Page */
 #mc-embedded-subscribe {
   background-color: red;
