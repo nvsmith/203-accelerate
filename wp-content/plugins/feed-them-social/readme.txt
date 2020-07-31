@@ -2,8 +2,8 @@
 Contributors: slickremix, slickchris
 Tags: Facebook, Instagram, Twitter, YouTube, Feed
 Requires at least: 3.6.0
-Tested up to: 5.3.2
-Stable tag: 2.8.2
+Tested up to: 5.4.2
+Stable tag: 2.8.6
 License: GPLv2 or later
 
 Display a Custom Facebook feed, Instagram feed, Twitter feed, Pinterest feed & YouTube feed on pages, posts or widgets.
@@ -75,6 +75,40 @@ Feed Them Social was Developed By SlickRemix --> [https://www.slickremix.com/](h
   * Log into WordPress dashboard then click **Plugins** > **Add new** > Then under the title "Install Plugins" click **Upload** > **choose the zip** > **Activate the plugin!**
 
 == Changelog ==
+= Version 2.8.6 Thursday, July 23rd, 2020 =
+  * NEW: Facebook Feed: All target="_blank" a tag elements now have rel="noreferrer" for better SEO results.
+  * NEW: Facebook Options: Option to change the main page title htag (h1-h6) and font size.
+  * REMOVE: G+ from the share options since the Google Plus social network has been shutdown.
+  * REMOVE: Facebook Albums Feed: Date the Album was created.
+  * PREMIUM NEW: Facebook Albums: Now you can see 25 photos per album using the popup option. On the 25th photo a link will appear to see the rest of the Album on Facebook.
+  * PREMIUM FIX: Facebook Photo & Album Feed: The popup description was missing link and tag conversions to clickable links.
+  * PREMIUM FIX: Add h6 in the list of tags to avoid appending the ellipsis. This works when using the words=45 shortcode option.
+  * FACEBOOK REVIEWS FIX: If no profile photo set on Facebook use our default fts icon so the profile image does not appear broken.
+
+= Version 2.8.5 Friday, June 26th, 2020 =
+  * NEW: Works with WordPress 5.4.2
+  * FTS BAR EXTENSION NEW: Instagram: Now includes, Basic, Business and Hashtag Feed options.
+  * FTS BAR EXTENSION NEW: Option to display FTS bar on a specific page ID.
+
+= Version 2.8.4 Friday, June 19th, 2020 =
+  * FIX: Custom CSS Option: Replace wp_enqueue_scripts with wp_print_styles.
+  * FIX: Facebook Albums Feed: The main photos are now appearing for album feeds again.
+  * FIX: Facebook Feed: php Warning for 'host': Add check for FB link to make sure it exists.
+  * FIX: Instagram Feed: Accessibility additions for links, titles, and fixed multiple ids issue.
+
+= Version 2.8.3.4 Thursday, June 4th, 2020 =
+  * FIX: Facebook Options: The access token button was not returning pages a user had linked to instagram.
+
+= Version 2.8.3.3 Tuesday, April 28th, 2020 =
+  * DISABLED: Pinterest Feed: Without notice or warning the Pinterest API has become unavailable. Once the API is available to us again we will make an update to correct the issue. For the time being we are going to disable the access token button.
+  * NEW: System Info: Added Instgram Basic and Business token checks to aid in support.
+
+= Version 2.8.3.2 Wednesday, April 8th, 2020 =
+  * FIXED: Instagram Feed: Profile info options not showing on the Settings page shortcode generator, follow button was not displaying and misspelling of Instagram name on legacy API error message.
+
+= Version 2.8.3.1 Monday, March 30th, 2020 =
+  * NOTICE: Instagram Feed: The Legacy API will be depreciated as of March 31st, 2020 in favor of the new Instagram Graph API and the Instagram Basic Display API. Please click the the button on the instagram Options page of our plugin to reconnect your account. You must also generate a new shortcode and replace your existing one.
+
 = Version 2.8.2 Friday, January 17th, 2020 =
   * FIXED: Instagram Options & Feed: Premium feature was visible and not working properly. Please upgrade to the premium or combined streams extension to use the hashtag feed.
 
@@ -267,7 +301,7 @@ Feed Them Social was Developed By SlickRemix --> [https://www.slickremix.com/](h
 = Version 2.4.0 Tuesday, April 10th, 2018 =
    * REMOVE: Facebook Group Feed and Specific Events Posts: These feed types have been disabled by Facebook at this time. We'll post changes as we receive them from Facebook. [Read More](https://www.slickremix.com/facebook-api-changes-on-april-4th-2018/).
    * NOTE: Facebook Event Feed: Facebook now requires you use a page access token to view this feed type. The page access token must be for that facebook page for it to work. An APP ID will not work anymore.
-   * FIX: Instagram Feed: The convert Instagram name option has been removed now that Instgram as removed access for this option. Set your Access Token from the Instagram Options page to get your Instagram ID now. [Read More](https://www.slickremix.com/instagram-api-change-on-april-4th-2018/).
+   * FIX: Instagram Feed: The convert Instagram name option has been removed now that instagram as removed access for this option. Set your Access Token from the Instagram Options page to get your Instagram ID now. [Read More](https://www.slickremix.com/instagram-api-change-on-april-4th-2018/).
    * POPUP FIX: Instagram Hashtag or Location Feed: Because of the resent privacy change by Instagram we replaced the missing profile photo with an Instagram Icon and the persons Actual Name replaced with Handle name.
    * FIX: Instagram Feed: To create additional Instragram Feeds we have now added access_token= to the shortcode generator on the Settings page of our plugin.
    * FIX: Settings Page: View Extensions and Demo link not working properly.

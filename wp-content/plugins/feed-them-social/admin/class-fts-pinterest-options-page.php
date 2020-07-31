@@ -37,7 +37,14 @@ class FTS_Pinterest_Options_Page {
 		$fts_pinterest_show_follow_btn_where = get_option( 'pinterest_show_follow_btn_where' );
         $access_token         = isset( $_GET['access_token'] ) ? sanitize_text_field( $_GET['access_token'] ) : get_option( 'fts_pinterest_custom_api_token' );
 		?>
-		<div class="feed-them-social-admin-wrap">
+        <div class="fts-failed-api-token" style="margin-bottom: 20px;">
+            <?php
+            echo esc_html( 'Without notice or warning the Pinterest API has become unavailable. Once the API is available to us again we will make an update to correct the issue. For the time being we are going to disable the access token button. 4-20-2020', 'feed-them-social' );
+            ?>
+        </div>
+
+        <div class="feed-them-social-admin-wrap">
+
 			<h1>
 				<?php echo esc_html( 'Pinterest Feed Options', 'feed-them-social' ); ?>
 			</h1>
@@ -56,18 +63,19 @@ class FTS_Pinterest_Options_Page {
 
 				<?php settings_fields( 'fts-pinterest-feed-style-options' ); ?>
 
-				<div class="feed-them-social-admin-input-wrap" style="padding-top:0">
+				<div class="feed-them-social-admin-input-wrap" style="padding-top:0; display: noneee">
 					<div class="fts-title-description-settings-page">
 						<h3>
 							<?php echo esc_html( 'Pinterest Access Token', 'feed-them-social' ); ?>
 						</h3>
+
 						<p><?php echo esc_html( 'This is required to make the feed work. Click the button below and it will connect to your Pinterest account to get an access token, and it will return it in the input below. Then click the save button and you will now be able to generate your Pinterest feed from the Settings page of our plugin.', 'feed-them-social' ); ?>
 						</p>
 						<p>
 							<?php
 							echo sprintf(
 								esc_html( '%1$sLogin and get my Access Token%2$s', 'feed-them-social' ),
-								'<a href="' . esc_url( 'https://api.pinterest.com/oauth/?response_type=token&redirect_uri=https://www.slickremix.com/pinterest-token-plugin/&client_id=4852080225414031681&scope=read_public&state=' . admin_url( 'admin.php?page=fts-pinterest-feed-styles-submenu-page' ) ) . '" class="fts-pinterest-get-access-token">',
+								'<a href="' . esc_url( 'https://api.pinterest.com/oauth/?response_type=token&redirect_uri=https://www.slickremix.com/pinterest-token-plugin/&client_id=5063534389122615467&scope=read_public&state=' . admin_url( 'admin.php?page=fts-pinterest-feed-styles-submenu-page' ) ) . '" class="fts-pinterest-get-access-token">',
 								'</a>'
 							);
 							?>

@@ -197,6 +197,23 @@ margin-bottom: 2em;
 }
 
 /* End Case Studies */
+
+/* Blog Page */
+#mc-embedded-subscribe {
+  background-color: red;
+}
+
+/* 404 Error Page */
+.error404 {
+  color: white;
+  font-family: 'Londrina Solid', cursive;
+}
+
+#goback-button {
+  display: inline-block;
+  margin-top: 1em;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
@@ -209,15 +226,4 @@ margin-bottom: 2em;
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
-}
-
-/* 404 Error Page */
-.error404 {
-  color: white;
-  font-family: 'Londrina Solid', cursive;
-}
-
-#goback-button {
-  display: inline-block;
-  margin-top: 1em;
 }
