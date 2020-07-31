@@ -15,8 +15,8 @@
  <div id="primary" class="home-page hero-content">
 	 <div class="main-content" role="main">
 		 <?php while (have_posts()) : the_post();
-		 		$banner_tagline = get_field('banner_tagline');
-		 ?>
+                $banner_tagline = get_field('banner_tagline');
+         ?>
 			 <h3><?php echo $banner_tagline; ?></h3>
 		 <?php endwhile; // end of the loop.?>
 	 </div><!-- .main-content -->
@@ -39,13 +39,13 @@
  							<a href="<?php echo $back_link; ?>">&lsaquo; Go Back</a>
  						</p>
  					</aside>
- 				</article>
 
- 				<div class="case-study-images">
- 					<?php if ($image_1) {
-          echo wp_get_attachment_image($image_1, $size);
-      }?>
- 				</div><!-- end case-study-images -->
+   				<div class="case-study-images">
+   					<?php if ($image_1) {
+            echo wp_get_attachment_image($image_1, $size);
+          }?>
+   				</div><!-- end case-study-images -->
+        </article>
  			<?php endwhile; // end of the loop.?>
  		</div><!-- .main-content -->
  	</div><!-- #primary -->
