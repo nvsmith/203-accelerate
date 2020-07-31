@@ -14,12 +14,26 @@ Text Domain:  accelerate-theme-child
 }
 
 #masthead {
-  /* background: none repeat scroll 0 0 #8F7686; */
-  background-color: #8F7686;
-  min-height: 15vh;
+  background-image: linear-gradient(to right, #000, #8F7686);
+  min-height: 20vh;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
+
+.page-header .top-logo .title {
+  font: 700 2.5em 'Lato', 'Open Sans', Arial, sans-serif;
+}
+
+.page-header {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 .button {
   background: #8F7686;
