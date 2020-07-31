@@ -9,6 +9,8 @@ Version:       2.0.0
 text-align:   left;light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
 */
+
+
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }

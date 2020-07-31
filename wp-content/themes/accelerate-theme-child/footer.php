@@ -16,7 +16,9 @@
 			<div class="site-info">
 				<div class="site-description">
 					<p><?php bloginfo('description'); ?></p>
-					<p>&copy; <?php bloginfo('title'); ?>, LLC
+					<a href="<?php echo site_url(); ?>">
+						<p>&copy; <?php bloginfo('title'); ?>, Inc</p>
+					</a>
 				</div>
 
 				<nav class="social-media-navigation" role="navigation">
