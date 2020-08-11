@@ -19,6 +19,10 @@
 					<a href="<?php echo site_url(); ?>">
 						<p>&copy; <?php bloginfo('title'); ?>, Inc</p>
 					</a>
+
+					<div class="myhomepage-link">
+            <a href="https://nvsmith.com">&#8617; Return to nvsmith.com</a>
+          </div><!-- end .myhomepage-link -->
 				</div>
 
 				<nav class="social-media-navigation" role="navigation">
