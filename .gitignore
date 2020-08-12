@@ -1,8 +1,8 @@
 # Ignore the following
 
-accelerate-design-files
-
 .DS_Store
+
+accelerate-design-files
 
 # WordPress Files
 wp-admin
